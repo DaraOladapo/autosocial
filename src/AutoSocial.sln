@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoSocial.Functions", "Functions\AutoSocial.Functions\AutoSocial.Functions.csproj", "{7C56F283-49EC-4D4D-9F19-AF05FF39660D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Debug|x64.Build.0 = Debug|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Debug|x86.Build.0 = Debug|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Release|x64.ActiveCfg = Release|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Release|x64.Build.0 = Release|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Release|x86.ActiveCfg = Release|Any CPU
+		{7C56F283-49EC-4D4D-9F19-AF05FF39660D}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFB78893-E34D-4936-905F-B39D08E77FFC}
+	EndGlobalSection
+EndGlobal
