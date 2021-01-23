@@ -15,9 +15,9 @@ namespace AutoSocial.Functions
 {
     public static class YouTubeFunction
     {
-        [FunctionName("youtube")]
+        [FunctionName("YouTube")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
             log.LogInformation("Youtube video info retrieved.");

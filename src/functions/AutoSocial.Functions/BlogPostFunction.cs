@@ -1,24 +1,25 @@
-using AutoSocial.Functions.Models;
-using CodeHollow.FeedReader;
-using Microsoft.AspNetCore.Http;
+using System;
+using System.IO;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using System;
+using Newtonsoft.Json;
+using CodeHollow.FeedReader;
+using AutoSocial.Functions.Models;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace AutoSocial.Functions
 {
     public static class BlogPostFunction
     {
-        [FunctionName("BlogPostFunction")]
+        [FunctionName("BlogPost")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
-        {
-            log.LogInformation("blog post info retrieved.");
+        {log.LogInformation("blog post info retrieved.");
 
             var blogPostFeed = await FeedReader.ReadAsync(Constants.BlogFeedURL);
             var randomIndex = new Random().Next(blogPostFeed.Items.Count) - 1;
