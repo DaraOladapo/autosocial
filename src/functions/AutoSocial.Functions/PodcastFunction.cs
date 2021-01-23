@@ -27,7 +27,6 @@ namespace AutoSocial.Functions
             var pdFeedItem = new AutoFeedItem()
             {
                 Title = podcastFeed.Items.ToArray()[randomIndex].Title,
-                Description = podcastFeed.Items.ToArray()[randomIndex].Description,
                 Link = podcastFeed.Items.ToArray()[randomIndex].Link,
 
             };

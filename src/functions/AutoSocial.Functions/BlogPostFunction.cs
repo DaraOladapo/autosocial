@@ -26,7 +26,6 @@ namespace AutoSocial.Functions
             var blgFeedItem = new AutoFeedItem()
             {
                 Title = blogPostFeed.Items.ToArray()[randomIndex].Title,
-                Description = blogPostFeed.Items.ToArray()[randomIndex].Description,
                 Link = blogPostFeed.Items.ToArray()[randomIndex].Link,
 
             };

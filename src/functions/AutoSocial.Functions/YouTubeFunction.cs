@@ -27,7 +27,6 @@ namespace AutoSocial.Functions
             var ytFeedItem = new AutoFeedItem()
             {
                 Title = youTubeFeed.Items.ToArray()[randomIndex].Title,
-                Description = youTubeFeed.Items.ToArray()[randomIndex].Description,
                 Link = youTubeFeed.Items.ToArray()[randomIndex].Link,
 
             };
