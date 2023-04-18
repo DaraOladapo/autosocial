@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using CodeHollow.FeedReader;
 using AutoSocial.Functions.Models;
 using System.Linq;
+using CodeHollow.FeedReader.Feeds.Itunes;
 
 namespace AutoSocial.Functions
 {
@@ -27,8 +28,7 @@ namespace AutoSocial.Functions
             var pdFeedItem = new AutoFeedItem()
             {
                 Title = podcastFeed.Items.ToArray()[randomIndex].Title,
-                Link = podcastFeed.Items.ToArray()[randomIndex].Link,
-
+                Link = podcastFeed.Items.ToArray()[randomIndex].Link
             };
             log.LogInformation("Podcast info returned.");
             return new OkObjectResult(pdFeedItem);
